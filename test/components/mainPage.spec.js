@@ -1,9 +1,10 @@
 /**
  * @jest-environment jsdom
  */
+// eslint-disable-next-line no-unused-vars
+import firebase from '../../src/lib/__mocks__/firebase-Auth.js';
 import { mainPage } from '../../src/components/mainPage.js';
 /* import * as app from '../../src/app.js'; */
-import firebase from '../../src/lib/__mocks__/firebase-Auth.js';
 
 const component = mainPage();
 document.body.innerHTML = '<div id="root"></div>';
