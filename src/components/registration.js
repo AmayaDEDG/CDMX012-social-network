@@ -116,7 +116,7 @@ export const registration = () => {
   registrationStructure.append(petspaceLogo, registrationBox, returnButton);
   structure.append(desktopImg, registrationStructure);
 
-  returnButton.addEventListener('click', () => { onNavigate('/'); });
+  returnButton.addEventListener('click', () => { onNavigate('/CDMX012-social-network/src/'); });
   eyeButton.addEventListener('click', (e) => {
     e.preventDefault();
     if (inputPW.type === 'password') {
