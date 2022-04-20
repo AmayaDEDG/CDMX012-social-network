@@ -6,7 +6,6 @@
 import { getPostUser } from '../lib/readFirestore.js';
 import { addLikes } from '../lib/addFirestore.js';
 import { editPublication, deletePublication } from './create-edit-and-delete-pubs.js';
-import { getCurrentUserName } from '../lib/firebaseApp.js';
 
 export const createPosts = (input, user, currentUserId, likes, postId, postUser) => {
   let likeImg = '';
@@ -39,7 +38,6 @@ export const createPosts = (input, user, currentUserId, likes, postId, postUser)
     src: './img/deleteicon.png',
   };
   const pubTextAttributes = {
-    // class: 'publication-input new-Text',
     id: `text${postId}`,
     class: 'publication-text',
   };
@@ -132,7 +130,7 @@ export const createPosts = (input, user, currentUserId, likes, postId, postUser)
     likeCount.innerText = localCount;
   });
 
-  if (user !== getCurrentUserName()) {
+  if (currentUserId !== postUser) {
     optionSection.style.visibility = 'hidden';
   } else {
     optionSection.style.visibility = 'visible';
@@ -140,7 +138,7 @@ export const createPosts = (input, user, currentUserId, likes, postId, postUser)
 
   // botón editar
   editPub.addEventListener('click', () => {
-    editPublication(user, postId, postArea);
+    editPublication(currentUserId, postUser, postId, postArea);
   });
 
   // botón para borrar

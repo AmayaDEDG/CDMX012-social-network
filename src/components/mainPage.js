@@ -133,7 +133,6 @@ export const mainPage = () => {
   const messageIconPc = document.createElement('img');
   const profileIconPcContainer = document.createElement('div');
   const profileIconPc = document.createElement('img');
-  // const addBr = document.createElement('br');
   homeIconPcContainer.setAttribute('class', 'icon-container');
   menuIconPcContainer.setAttribute('class', 'icon-container');
   notificationIconPcContainer.setAttribute('class', 'icon-container');
@@ -173,7 +172,7 @@ export const mainPage = () => {
   profileIconPcContainer.appendChild(profileIconPc);
   menuLeftPc.append(homeIconPcContainer, menuIconPcContainer, notificationIconPcContainer, messageIconPcContainer, profileIconPcContainer);
   mainPageStructure.append(menuUp, homePage, menuDown, menuLeftPc);
-  menuIcon.addEventListener('click', () => { onNavigate('/CDMX012-social-network/src/'); });
+  menuIcon.addEventListener('click', () => { onNavigate('/'); });
 
   return mainPageStructure;
 };

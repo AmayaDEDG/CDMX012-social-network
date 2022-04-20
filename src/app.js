@@ -6,12 +6,11 @@ import { mainPage } from './components/mainPage.js';
 
 //  Routing
 export const routes = {
-  '/CDMX012-social-network/src/': home,
-  '/CDMX012-social-network/src/registration': registration,
-  '/CDMX012-social-network/src/mainPage': mainPage,
+  '/': home,
+  '/registration': registration,
+  '/mainPage': mainPage,
 };
 
-// const root = document.getElementById('root');
 window.onload = () => {
   const root = document.getElementById('root');
   root.appendChild(routes[window.location.pathname]());

@@ -18,7 +18,7 @@ export const addUserCollection = (user) => {
     photo: photoURL,
   })
     .then(() => {
-      onNavigate('/CDMX012-social-network/src/mainPage');
+      onNavigate('/mainPage');
     });
 };
 

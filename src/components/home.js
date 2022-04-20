@@ -152,7 +152,7 @@ export const home = () => {
     signInEmailAndPW(message, email, password);
   });
   
-  registerBtn.addEventListener('click', () => { onNavigate('/CDMX012-social-network/src/registration'); });
+  registerBtn.addEventListener('click', () => { onNavigate('/registration'); });
 
   gmailLogo.addEventListener('click', () => {
     signInWithGoogle();

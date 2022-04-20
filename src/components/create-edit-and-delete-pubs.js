@@ -1,11 +1,10 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable import/no-cycle */
-import { getCurrentUserName } from '../lib/firebaseApp.js';
 import { deletePost, addPostCollection, editPost } from '../lib/addFirestore.js';
 import { accessPosts } from '../lib/readFirestore.js';
 
-export const editPublication = (user, postId, postArea) => {
-  if (user === getCurrentUserName()) {
+export const editPublication = (user, postUser, postId, postArea) => {
+  if (user === postUser) {
     const editInput = document.createElement('input');
     editInput.setAttribute('class', 'edit-input');
     const pubText = document.getElementById(`text${postId}`).innerText;

@@ -2,6 +2,7 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable import/no-cycle */
 import { createPosts } from '../components/posts.js';
+import { firebaseConfig } from './firebaseApp.js';
 
 const db = firebase.firestore();
 
