@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "homepage": "https://amayadedg.github.io/CDMX012-social-network/",
-=======
-  "homepage": "https://maisahr.github.io/CDMX012-social-network/src/",
->>>>>>> ac622ada6ea45ad373b6ad55f678c70323460b97
+  "homepage": "https://amayadedg.github.io/CDMX012-social-network/src/",
   "name": "social-network",
   "version": "1.0.0",
   "description": "Social Network @ Laboratoria",
